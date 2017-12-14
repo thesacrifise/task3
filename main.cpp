@@ -1,14 +1,11 @@
-#include <QtGui>
-
-using namespace std;
+#include "mainwindow.h"
+#include <QApplication>
 
 int main(int argc, char *argv[])
 {
-    QApplication app(argc,argv);
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
 
-    QWidget *widget = new QWidget;
-
-    widget->show();
-
-    return app.exec();
+    return a.exec();
 }
